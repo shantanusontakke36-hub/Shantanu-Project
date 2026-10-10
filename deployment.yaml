@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: shantanu-project
+  name: shantanu-project-deployment
 
 spec:
   replicas: 2
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: shantanu-project-container
-          image: shantanu-project-image:IMAGE_TAG
+          image: shantu123/shantanu-project-image:IMAGE_TAG
 
           ports:
             - containerPort: 8080
